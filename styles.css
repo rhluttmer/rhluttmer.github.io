@@ -1,0 +1,95 @@
+h1
+{
+    text-align: center;
+    /* I used this site to learn how to make font bold https://www.w3schools.com/cssref/pr_font_weight.asp */
+    font-weight: bold;
+    background-color: #82b883;
+    /*I used this to learn about margins: https://www.w3schools.com/css/css_margin.aspS*/
+    margin: 0;
+}
+
+h2
+{
+    text-align: center;
+    /* I used this site to learn how to make font bold https://www.w3schools.com/cssref/pr_font_weight.asp */
+    font-weight: bold;
+}
+
+
+/*Used to find desired color hex codes: https://htmlcolorcodes.com/*/
+/*Used to learn how to change color: https://www.w3schools.com/css/css_background.asp */
+body
+{
+    background-color : #DEFFDF;
+    margin: 0px 25px 25px;
+}
+
+/*Used to learn about padding: https://www.w3schools.com/css/css_padding.asp*/
+/*Menu design inspired by: https://www.w3schools.com/howto/howto_js_topnav.asp*/
+.menu
+{
+    background-color : #93D594;
+    font-size: 20;
+    padding: 8px;
+
+}
+
+.menu a
+{
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+
+}
+
+.menu a:hover
+{
+    background-color: #186819;
+    color: #EAFBEB;
+
+}
+
+a.active
+{
+    color: white;
+    font-weight: bold;
+}
+
+.card-body
+{
+    background-color: #93D594;
+}
+
+.btn
+{
+    background-color: #32964c;
+    color: white;
+
+}
+
+.btn:hover
+{
+    background-color: #11381b;
+    color: white;
+}
+
+
+/* Used https://www.w3schools.com/css/css3_images.asp*/
+.soccer
+{
+    height: 450px;
+    overflow:hidden;
+}
+
+.green
+{
+    background-color: #32964c;
+    color: white;
+}
+
+.quest
+{
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+

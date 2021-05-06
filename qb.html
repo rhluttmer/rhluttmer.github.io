@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Quiz Bowl</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#form1').addEventListener('submit', function (event) {
+                    let a = document.querySelector('#answer1').value.trim().toLowerCase();
+                    if (a=="android")
+                    {
+                        alert("You are right!");
+                        document.querySelector('#answer1').style.backgroundColor = "lime";
+                    }
+                    else
+                    {
+                        alert("Sorry, the answer was android.");
+                        document.querySelector('#answer1').style.backgroundColor = "red";
+                    }
+                    event.preventDefault();
+                });
+
+                document.querySelector('#form2').addEventListener('submit', function (event) {
+                    let a = document.querySelector('#answer2').value.trim().toLowerCase();
+                    if (a=="http" | a== "hypertext transfer protocol" | a=="https")
+                    {
+                        alert("You are right!");
+                        document.querySelector('#answer2').style.backgroundColor = "lime";
+                    }
+                    else
+                    {
+                        alert("Sorry, the answer was HTTP.");
+                        document.querySelector('#answer2').style.backgroundColor = "red";
+                    }
+                    event.preventDefault();
+                });
+
+                document.querySelector('#form3').addEventListener('submit', function (event) {
+                    let a = document.querySelector('#answer3').value.trim().toLowerCase();
+                    if (a=="c" | a== "css")
+                    {
+                        alert("You are right!");
+                        document.querySelector('#answer3').style.backgroundColor = "lime";
+                    }
+                    else
+                    {
+                        alert("Sorry, the answer was HTTP.");
+                        document.querySelector('#answer3').style.backgroundColor = "red";
+                    }
+                    event.preventDefault();
+                });
+
+            });
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Rose Luttmer's Website</h1>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="qb.html" class="active">Quiz Bowl</a>
+            <a href="ski.html">Ski Coaching</a>
+            <a href="reading.html">Reading</a>
+            <a href="soccer.html">Soccer</a>
+        </nav>
+
+        <h2>Quiz Bowl</h2>
+
+        <main>
+            <h4>What is Quiz Bowl?</h4>
+                <p>From the <a href="https://www.naqt.com/about/quiz-bowl.html">National Academic Quiz Tournament</a> Website: </p>
+                <p>"Quiz bowl is a game in which two teams compete head-to-head to answer questions from all areas of knowledge, including history, literature, science, fine arts, current events, popular culture, sports, and more."</p>
+                <p>"The defining feature of quiz bowl is the use of a 'buzzer system' that lets players interrupt the reading of a question when they know the answer. That element adds a dimension of confidence, anticipation, and rapid recall to a game about knowing facts. Those 'tossup' questions are answered individually, but doing so earns one's team a chance at a three-part 'bonus' question. Bonus questions are worth more points and allow collaboration, but are generally more difficult."</p>
+
+            <h4>Playing Quiz Bowl</h4>
+                <p>I've been playing quizbowl for seven years, since I was in 6th grade. I started out playing for the Richmond Middle School team, and now I play for the Hanover High School quiz bowl team. I specialize in math, science, art, and a little bit of literature and music. </p>
+
+            <figure>
+                <img src="images/msqb.JPG" alt="Rose playing quiz bowl" class="figure-img img-fluid">
+                <figcaption class="figure-caption">This is me in 6th grade at the NAQT Middle School Championship Tournament.</figcaption>
+            </figure>
+
+
+            <h4>Coaching Quiz Bowl</h4>
+                <p>I also coach quiz bowl for the Richmond Middle School team. I love coaching quiz bowl because I find it rewarding to see players improve throughout the year. Often in the fall, we have students who are afraid to buzz in, but over time they become more confident, and by the end of the year they answer multiple questions each game. I also enjoy seeing the team as a whole improve, transforming from a bunch of individuals who criticize each other for incorrect answers to a cohesive, encouraging unit where every player has a specialty and everyone on the team knows who to turn to for a given answer. Furthermore, it’s amazing to watch the team progress throughout the years. When I was a team member in sixth grade, we placed 126th out of 128 teams at the national tournament, but recently, one of our teams was tied for 13th out of 176 teams.</p>
+
+            <figure>
+                <img src="images/qbcoach.JPG" alt="Rose coaching quiz bowl" class="figure-img img-fluid">
+                <figcaption class="figure-caption">This is me coaching the middle school quiz bowl team when I was in 9th grade.</figcaption>
+            </figure>
+
+            <h4>Try Some (CS themed) Quiz Bowl Questions</h4>
+            <p>These problems are sample middle school and high school questions from <a href="https://www.naqt.com/samples/">NAQT's website</a>.</p>
+
+
+            <p class="quest">
+                1. The seventh version of this software, called “Nougat,” was released in 2017. Windows may have been
+                surpassed by this operating system as the most-installed in the world. For 10 points—what mobile
+                operating system developed by Google is named after a word for a human-like robot?
+            </p>
+            <form id="form1">
+                <input autocomplete="off" id="answer1" placeholder="Answer to Q1" type="text">
+                <input type="submit" class="green">
+            </form>
+
+
+
+
+            <p class="quest">
+                2. In this protocol, responses from the server usually include a ”content-type” header. This protocol uses the
+                error code 404 to indicate ”Not Found.” For 10 points—name this protocol used to serve web pages, and
+                whose four-letter abbreviation precedes ”colon slash slash” in many URLs.
+            </p>
+            <form id="form2">
+                <input autocomplete="off" id="answer2" placeholder="Answer to Q2" type="text">
+                <input type="submit" class=green>
+            </form>
+
+
+
+            <p class="quest">
+                3. This is the first letter of the name of a style sheet language paired with HTML to make websites.
+                The current geologic era's name begins with this letter, which also denotes a quantity approximated at 300
+                million meters per second. For 10 points—what letter signifies the speed of light?
+            </p>
+            <form id="form3">
+                <input autocomplete="off" id="answer3" placeholder="Answer to Q3" type="text">
+                <input type="submit" class=green>
+            </form>
+
+
+        </main>
+
+
+
+    </body>
+</html>
